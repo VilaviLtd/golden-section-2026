@@ -1,12 +1,6 @@
 @import url('./css/01-header.css');
 @import url('./css/02-banner.css');
-@import url('./css/03-button.css');
-@import url('./css/04-about-event.css');
-@import url('./css/05-top-leaders.css');
-@import url('./css/06-schedule.css');
-@import url('./css/07-map.css');
-@import url('./css/08-footer.css');
-@import url('./css/09-slider.css');
+@import url('./css/03-about-event.css');
 
 body {
   background: #fafafa;
