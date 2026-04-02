@@ -35,6 +35,24 @@ h6 {
   max-width: 1326px;
   margin: 0px auto;
 }
+.section-map {
+  padding: 20px 0px 0px 0px;
+}
+
+.map-container {
+  width: 100%;
+  aspect-ratio: 5 / 3;
+
+  background: url('./images/map.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
 
 @media (max-width: 1326px) {
   .box-center {
