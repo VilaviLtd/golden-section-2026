@@ -4,10 +4,6 @@
   gap: 30px;
 }
 
-.faq__container {
-  width: 100%;
-}
-
 .guide-title {
   color: #213247;
   font-weight: 700;
@@ -25,24 +21,69 @@
 }
 
 .guide-info__flexbox {
-  margin: 55px 0px 0px 0px;
+  margin: 80px 0px 0px 0px;
 }
 
-.faq__accordion {
+.guide-important-info-container {
+  padding: 20px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.guide-important-info-item {
+  width: 343px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 5px 5px 10px 0px #a6abbd1a;
+  background: #fff;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+.guide-important-info-item-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+}
+.guide-important-info-item-batton {
   width: 100%;
-  padding: 50px;
-  background: var(--bg-color-1);
-  border-radius: 35px;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  -ms-border-radius: 35px;
-  -o-border-radius: 35px;
+  background: linear-gradient(135.37deg, #1b6cab 4.29%, #6cbaf7 95.6%);
+  padding: 8px 0px 12px 0px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.guide-important-info-item-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
 }
 
 .accordion {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 0px 70px 0px 70px;
+}
+
+.accordion ul {
+  list-style-type: disc;
 }
 
 .accordion-item {
@@ -100,12 +141,17 @@
 
 .accordion-header::after {
   position: absolute;
-  content: url('../images/arr-accordeon.svg');
-  color: var(--hero-color);
-  top: 0px;
+  content: '';
+  top: 0;
   right: -20px;
-  font-size: 24px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/arr-accordeon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: all 0.3s ease;
+  transform-origin: center center;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -182,6 +228,12 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .guide-important-info-container {
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 745px) {
   .guide-contacts__section {
     width: 100%;
@@ -189,18 +241,15 @@
 }
 
 @media (max-width: 690px) {
-  .guide__section .title-text__container,
-  .faq__section .title-text__container {
+  .guide__section .title-text__container {
     margin: 0px 0px 45px 0px;
   }
 
-  .accordion,
-  .faq__accordion {
+  .accordion {
     padding: 30px;
   }
 
-  .guide__section .center,
-  .faq__section .center {
+  .guide__section .box-center {
     margin: 0px;
     padding: 0px;
   }
@@ -225,14 +274,14 @@
   }
 }
 
-@media (max-width: 550px) {
-  .guide__section,
-  .faq__section {
-    padding: 65px 0px 0px 0px;
+@media (max-width: 666px) {
+  .guide-title {
+    font-size: 22px;
   }
+}
 
-  .guide-info__flexbox,
-  .faq__container {
+@media (max-width: 550px) {
+  .guide-info__flexbox {
     margin: 35px 0px 0px 0px;
   }
 }
